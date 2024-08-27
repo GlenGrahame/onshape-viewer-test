@@ -1,25 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onshape Viewer Test</title>
+    <title>Onshape Viewer</title>
     <script src="https://cad.onshape.com/glassworks/embed.js"></script>
 </head>
 <body>
-    <h1>Onshape Viewer Test</h1>
     <div id="onshape-viewer" style="width: 800px; height: 600px; border: 1px solid black;"></div>
 
     <script>
-        var viewer = new OnshapeViewer({
-            containerId: 'onshape-viewer',
-            documentId: 'b1b56b57b5a71c2e2f7bd1ea',
-            workspaceId: 'c4a0673d294889e9b62d428f',
-            elementId: '44db6744513321c3537d8782'
-        });
-
-        viewer.pan(); // Enable panning
+        window.onload = function() {
+            var viewer = new OnshapeViewer({
+                containerId: 'onshape-viewer',
+                documentId: 'b1b56b57b5a71c2e2f7bd1ea',
+                workspaceId: 'c4a0673d294889e9b62d428f',
+                elementId: '44db6744513321c3537d8782'
+            });
+        };
     </script>
 </body>
 </html>
